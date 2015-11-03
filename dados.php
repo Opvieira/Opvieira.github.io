@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Website by Orlando Vieira</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">SMIR</h1>
+      <h2 class="project-tagline">Servidor de Monitorização e Intervenção Remota</h2>
+      <a href="index.html" class="btn">Início</a>
+      <a href="hardware.php" class="btn">Hardware</a>
+      <a href="dados.php" class="btn">Dados</a>
+      <a href="graficos.php" class="btn">Gráficos</a></li>
+      <a href="contatos.php" class="btn">Contatos</a></li>
+  </section>
+    <section class="main-content">
+</head>
+<body>
+<h2>Dados Lidos:</h2>
+<table class="smir-table smir-table-highlight-all" style="width:100%">
+<?php
+class MyDB extends SQLite3
+{
+    function __construct()
+    {
+        $this->open('bd/lele.db');//inicializar a base de dados
+    }
+}
+$name=0;
+$db = new MyDB();
+$result = $db->query('SELECT * FROM DADOS');
+
+if($name==0){
+   $name=1;
+   echo "<table>";
+	echo "<tr>";
+	    echo "<th>".' Leitura '		."</th>";
+	    echo "<th>".' Data '		."</th>";
+	    echo "<th>".' Hora '		."</th>";
+	    echo "<th>".' Humidade (%)'		."</th>";
+	    echo "<th colspan=2>".'Temperatura (ºC|ºF)'	."</th>";
+	    echo "<th>".' Carga da bateria (%)'	."</th>";
+	    echo "<th>".' Painel (V)'		."</th>"; 
+	   echo "</tr>";
+   // echo "</table>";
+}
+while ($row = $result->fetchArray(SQLITE3_ASSOC)){
+ //   echo "<table>";
+	echo "<tr>";
+	    echo "<td>".$row['ID']		."</td>";
+	    echo "<td>".$row['Data']		."</td>";
+	    echo "<td>".$row['Hora']		."</td>";
+	    echo "<td>".$row['Humidade']	."</td>";
+	    echo "<td>".$row['Temperatura']	."</td>";
+	    echo "<td>".$row['Fahrenheit']	."</td>";
+	    echo "<td>".$row['Potenciometro']	."</td>";
+	    echo "<td>".$row['Painel']		."</td>";
+	echo "</tr>";
+   
+} echo "</table>";
+?>
+
+</table>
+<br>
+
+<h2>Estado do Hardware</h2>
+<table class="smir-table smir-table-highlight-all" style="width:100%;overflow: hidden">
+
+<?php
+$name=0;
+$db = new MyDB();
+$result = $db->query('SELECT * FROM HARDWARE');
+if($name==0){						//Cabecalho da tabela, apenas 1 vez por tabela
+   $name=1;
+    echo "<table>";
+       echo "<tr>";
+	   echo "<th>".' Leitura '		."</th>";
+	   echo "<th>".' Data '			."</th>";
+	   echo "<th>".' Hora '			."</th>";
+	   echo "<th>".' Desumidificador '	."</th>";
+	   echo "<th>".' Ar Condicionado '	."</th>";
+	   echo "<th>".' Bateria a Carregar '	."</th>";
+	   echo "<th>".' Painel como fonte '	."</th>";
+	echo "</tr>";
+ // echo "</table>";
+}
+while ($row = $result->fetchArray(SQLITE3_ASSOC)){	
+     // echo "<table>";
+	echo "<tr>";
+	   echo "<td>".$row['ID']		."</td>";
+	   echo "<td>".$row['Data']		."</td>";
+	   echo "<td>".$row['Hora']		."</td>";
+	   echo "<td>".$row['Desumidificador']	."</td>";
+	   echo "<td>".$row['Arcondicionado']	."</td>";
+	   echo "<td>".$row['Bateria']		."</td>";
+	   echo "<td>".$row['Painel']		."</td>";
+	echo "</tr>";
+ echo "</table>";
+}?>
+</table> <br>
+</body>
+</html>

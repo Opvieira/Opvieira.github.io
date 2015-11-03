@@ -1,0 +1,145 @@
+html {
+  background-color: rgba(220, 220, 220, 0.5);
+  color: #5A3626;
+  padding-top:20px;
+  height: 100%;
+}
+
+barra {
+  background-color: rgba(220, 220, 220, 0.5);
+  margin: 2px auto auto auto;
+  width: 800px;
+  height: 2%;
+  position: fixed;
+  width: 800px;
+  top: 2px;
+}
+
+body {
+  font-family: "Georgia", Times, serif;
+  font: normal 100 20px/30px "Trebuchet MS", Helvetica, sans-serif;
+  margin: 130px auto auto auto;
+  width: 1024px;
+  height: 1%;
+}
+
+
+footer,
+section {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 2px;
+}
+
+/*h1 {font-size: 40px; font-weight: bold;   margin: 5px 0 0 0; padding: 10px 0; color: #9b3d1f;}
+h2 {font-size: 28px; font-weight: normal;text-decoration: underline; line-height: 28px; margin: 0 0 0 0; padding: 0; color: #ffbe3d;}
+h3 {font-size: 28px; font-weight: normal; line-height: 28px; margin: 0 0 0 0; padding: 0; color: #DFA800; }
+h4 {font-size: 21px; font-weight: normal; margin: 0 0 10px 0; padding: 0; }
+h5 {font-size: 18px; font-weight: normal; margin: 0 0 20px 0; padding: 0; color: #ffbe3d; }
+h6 {font-size: 16px; font-weight: normal; margin: 0 0 10px 0; padding: 0; color:#ffbe3d; }
+h7 {font-size: 14px; font-weight: normal; margin: 0 0 5px  0; padding: 0; color:#000; }*/
+
+h1 {
+  background-image: -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0), rgba(230, 230, 230, 0.55));
+  background-image: -moz-linear-gradient(bottom, rgba(255, 255, 255, 0), rgba(230, 230, 230, 0.55));
+  background-image: -o-linear-gradient(bottom, rgba(255, 255, 255, 0), rgba(230, 230, 230, 0.55));
+  background-image: linear-gradient(to top, rgba(255, 255, 255, 0), rgba(230, 230, 230, 0.55));
+  color: #666;
+  font: normal 700 38px 'Lora', sans-serif;
+  letter-spacing: 0.7px;
+  margin: 0;
+  padding: 30px 0px;
+  text-align: center;
+}
+
+h2,
+h3 {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  color: #777;
+  font: normal 700 19px 'Open Sans', sans-serif;
+  letter-spacing: 0.5px;
+  margin: 0 0 20px 0;
+  padding: 10px 0;
+  text-transform: uppercase;
+  clear: both;
+}
+
+h4 {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  color: #777;
+  font: normal 700 15px 'Open Sans', sans-serif;
+  letter-spacing: 0.5px;
+  margin: 0 0 20px 0;
+  padding: 10px 0;
+  text-transform: uppercase;
+  clear: both;
+}
+
+p.main {
+    text-align: justify;}
+
+
+/*------------Barra navegação----------*/
+ul {
+    display: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+a.class1:link, a.class1:visited {
+    display: block;
+    width: 192px;
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: rgba(163, 63, 31, 1);
+    text-align: center;
+    padding: 4px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+a.class1:hover, a.class1:active {
+    background-color: rgba(130, 55, 31, 1);
+}
+
+/*-------------------Tabela----------------------*/
+table, td, th {
+    border: 1px solid black;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+}
+
+th {
+    height: 50px;
+}
+/*-------------Segundo tipo de links--------------*/
+a.class2, a.class2:link, a.class2:visited {
+	font-size:20px;
+	color: #666666;
+	text-decoration: underline;
+}
+
+a.class2:hover {
+	color: #FF0;
+	text-decoration: none;
+}
+
+/*-------------LISTAS--------------*/
+ul.a {
+    list-style-type: circle;
+}
+
+clock {
+	color:	rgba(0, 0, 0, 0.5);
+	font: normal 700 19px 'Open Sans', sans-serif; 
+	position: fixed;
+	right: 140px;
+	top: 80px;
+}

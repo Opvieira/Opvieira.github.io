@@ -1,0 +1,25 @@
+
+CREATE TABLE DADOS(ID INTEGER  PRIMARY KEY, Data TEXT, Hora TEXT, Humidade INT, Max_Humidade BOLEAN, Temperatura INT, Fahrenheit INT, Max_Temp BOLEAN, Potenciometro INT, Max_Poten BOLEAN, Painel INT, Max_Painel BOLEAN, TensaoAC INT, TensaoDC INT );
+
+
+INSERT INTO DADOS (Data,Hora,Humidade,Max_Humidade,Temperatura,Fahrenheit,Max_Temp,Potenciometro,Max_Poten,Painel,Max_Painel,TensaoAC,TensaoDC) VALUES(14.10,15.00,36,'FALSE',24,75.2,'FALSE',100,'TRUE' ,0 ,'FALSE',0 ,0);
+
+INSERT INTO DADOS (Data,Hora,Humidade,Max_Humidade,Temperatura,Fahrenheit,Max_Temp,Potenciometro,Max_Poten,Painel,Max_Painel,TensaoAC,TensaoDC) VALUES(14.10,15.15,35,'FALSE',25,77  ,'TRUE' ,63 ,'TRUE' ,34,'TRUE' ,0 ,39);
+
+INSERT INTO DADOS (Data,Hora,Humidade,Max_Humidade,Temperatura,Fahrenheit,Max_Temp,Potenciometro,Max_Poten,Painel,Max_Painel,TensaoAC,TensaoDC) VALUES(14.10,15.30,36,'FALSE',25,77  ,'TRUE' ,37 ,'FALSE',45,'TRUE' ,30,0);
+
+INSERT INTO DADOS (Data,Hora,Humidade,Max_Humidade,Temperatura,Fahrenheit,Max_Temp,Potenciometro,Max_Poten,Painel,Max_Painel,TensaoAC,TensaoDC) VALUES(14.10,15.45,37,'FALSE',25,77  ,'TRUE' ,37 ,'FALSE',14,'TRUE' ,40,0);
+
+INSERT INTO DADOS (Data,Hora,Humidade,Max_Humidade,Temperatura,Fahrenheit,Max_Temp,Potenciometro,Max_Poten,Painel,Max_Painel,TensaoAC,TensaoDC) VALUES(14.10,16.00,39,'TRUE' ,25,77  ,'TRUE' ,96 ,'TRUE' ,50,'TRUE' ,0 ,8);
+
+INSERT INTO DADOS (Data,Hora,Humidade,Max_Humidade,Temperatura,Fahrenheit,Max_Temp,Potenciometro,Max_Poten,Painel,Max_Painel,TensaoAC,TensaoDC) VALUES(14.10,16.30,36,'FALSE',25,77  ,'TRUE' ,100,'TRUE' ,45,'FALSE',47,0);
+
+INSERT INTO DADOS (Data,Hora,Humidade,Max_Humidade,Temperatura,Fahrenheit,Max_Temp,Potenciometro,Max_Poten,Painel,Max_Painel,TensaoAC,TensaoDC) VALUES(14.10,16.45,35,'FALSE',25,77  ,'TRUE' ,81 ,'TRUE' ,33,'TRUE' ,0,21);
+
+INSERT INTO DADOS (Data,Hora,Humidade,Max_Humidade,Temperatura,Fahrenheit,Max_Temp,Potenciometro,Max_Poten,Painel,Max_Painel,TensaoAC,TensaoDC) VALUES(14.10,17.00,35,'FALSE',25,77  ,'TRUE' ,81 ,'TRUE' ,49,'TRUE' ,0,20);
+
+INSERT INTO DADOS (Data,Hora,Humidade,Max_Humidade,Temperatura,Fahrenheit,Max_Temp,Potenciometro,Max_Poten,Painel,Max_Painel,TensaoAC,TensaoDC) VALUES(14.10,17.30,34,'FALSE',25,77  ,'TRUE' ,81 ,'TRUE' ,49,'TRUE' ,0,20);
+
+INSERT INTO DADOS (Data,Hora,Humidade,Max_Humidade,Temperatura,Fahrenheit,Max_Temp,Potenciometro,Max_Poten,Painel,Max_Painel,TensaoAC,TensaoDC) VALUES(14.10,17.45,33,'FALSE',25,77  ,'TRUE' ,81 ,'TRUE' ,49,'TRUE' ,0,20);
+
+INSERT INTO DADOS (Data,Hora,Humidade,Max_Humidade,Temperatura,Fahrenheit,Max_Temp,Potenciometro,Max_Poten,Painel,Max_Painel,TensaoAC,TensaoDC) VALUES(14.10,18.00,35,'FALSE',25,77  ,'TRUE' ,81 ,'TRUE' ,49,'TRUE' ,0,20);

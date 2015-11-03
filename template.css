@@ -1,0 +1,200 @@
+html {
+  background-color: rgba(220, 220, 220, 150);
+  color: #5A3626;
+  padding-top:0px;
+  height: 100%;
+}
+
+#header {
+    background-color: rgba(220, 220, 220, 150);
+    color:white;
+    text-align:left;
+    position: fixed;
+    top:0px;
+    z-index: 1;
+    height: 135px;
+    width:1024px;
+    opacity: 1;
+}
+
+barra {
+  background-color: rgba(220, 220, 220, 1);
+  margin: 2px auto auto auto;
+  width: 1024px;
+  height: 1%;
+  position: fixed;
+  top: 2px;
+  z-index: 1;
+}
+
+body {
+  font-family: "Georgia", Times, serif;
+  font: normal 100 20px/30px "Trebuchet MS", Helvetica, sans-serif;
+  margin: 150px auto auto auto;
+  width: 1024px;
+}
+
+#section1 {
+    width:350px;
+    float:left;
+    padding:10px;	 	 
+}
+
+footer,
+section {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 2px;
+}
+
+/*h1 {font-size: 40px; font-weight: bold;   margin: 5px 0 0 0; padding: 10px 0; color: #9b3d1f;}
+h2 {font-size: 28px; font-weight: normal;text-decoration: underline; line-height: 28px; margin: 0 0 0 0; padding: 0; color: #ffbe3d;}
+h3 {font-size: 28px; font-weight: normal; line-height: 28px; margin: 0 0 0 0; padding: 0; color: #DFA800; }
+h4 {font-size: 21px; font-weight: normal; margin: 0 0 10px 0; padding: 0; }
+h5 {font-size: 18px; font-weight: normal; margin: 0 0 20px 0; padding: 0; color: #ffbe3d; }
+h6 {font-size: 16px; font-weight: normal; margin: 0 0 10px 0; padding: 0; color:#ffbe3d; }
+h7 {font-size: 14px; font-weight: normal; margin: 0 0 5px  0; padding: 0; color:#000; }*/
+
+h1 {
+  background-image: -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0), rgba(230, 230, 230, 0.55));
+  background-image: -moz-linear-gradient(bottom, rgba(255, 255, 255, 0), rgba(230, 230, 230, 0.55));
+  background-image: -o-linear-gradient(bottom, rgba(255, 255, 255, 0), rgba(230, 230, 230, 0.55));
+  background-image: linear-gradient(to top, rgba(255, 255, 255, 0), rgba(230, 230, 230, 0.55));
+  color: #666;
+  font: normal 700 38px 'Lora', sans-serif;
+  letter-spacing: 0.7px;
+  margin: 0;
+  padding: 30px 0px;
+  text-align: center;
+}
+
+h2,
+h3 {
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.5);
+  color: #777;
+  font: normal 700 19px 'Open Sans', sans-serif;
+  letter-spacing: 0.5px;
+  margin: auto auto auto auto;
+  padding: 10px 0;
+  top:120px;
+  text-transform: uppercase;
+  clear: both;
+}
+
+h4 {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  color: #777;
+  font: normal 700 17px 'Open Sans', sans-serif;
+  letter-spacing: 0.5px;
+  margin: 0 0 20px 0;
+  padding: 10px 0;
+  text-transform: uppercase;
+  clear: both;
+}
+
+p.main {
+    text-align: justify;}
+
+/*------------Barra navegacao----------*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    margin: auto;
+    float: left;
+}
+
+a.class1:link, a.class1:visited {
+    display: block;
+    width: 196px;
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: rgba(163, 63, 31, 1);
+    text-align: center;
+    padding: 4px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+a.class1:hover, a.class1:active {
+    background-color: rgba(130, 55, 31, 1);
+}
+
+/*-------------------Tabela----------------------*/
+.smir-table {
+    border: solid 1px #DDEEEE;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.smir-table thead th {
+    font: normal 18px "Trebuchet MS", Helvetica, sans-serif;
+    background-color: #C16040;
+    border: solid 1px #DDEEEE;
+    color: #FFFFFF;
+    padding: 10px;
+    text-align: center;
+    /*text-shadow: 1px 1px 1px #fff;*/
+}
+.smir-table tbody td {
+    font: normal 14px "Trebuchet MS", Helvetica, sans-serif;
+    border: solid 1px #DDEEEE;
+    color: #333;
+    padding: 10px;
+    text-align: center;
+    text-shadow: 1px 1px 1px #fff;
+}
+.smir-table-highlight-all {
+    overflow: hidden;
+    z-index: -1;
+}
+.smir-table-highlight-all tbody td, .smir-table-highlight-all thead th {
+    position: relative;
+}
+.smir-table-highlight-all tbody td:hover::before {
+    background-color: #DDA08B;
+    content:'\00a0';
+    height: 100%;
+    left: -5000px;
+    position: absolute;
+    top: 0;
+    width: 10000px;
+    z-index: -1;
+}
+.smir-table-highlight-all tbody td:hover::after {
+    background-color: #DDA08B;
+    content:'\00a0';
+    height: 10000px;
+    left: 0;
+    position: absolute;
+    top: -5000px;
+    width: 100%;
+    z-index: -1;
+}
+/*-------------Segundo tipo de links--------------*/
+a.class2, a.class2:link, a.class2:visited {
+	font-size:20px;
+	color: #666666;
+	text-decoration: underline;
+}
+
+a.class2:hover {
+	color: #FF0;
+	text-decoration: none;
+}
+
+/*-------------LISTAS--------------*/
+ul.a {
+    list-style-type: circle;
+}
+
+clock {
+  color:  rgba(0, 0, 0, 0.5);
+  font: normal 700 19px 'Open Sans', sans-serif; 
+  position: fixed;
+  right: 140px;
+  top: 80px;
+  z-index: 1;
+}

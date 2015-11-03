@@ -1,0 +1,33 @@
+CREATE TABLE HARDWARE (ID INTEGER  PRIMARY KEY, Data TEXT, Hora TEXT, Desumidificador BOLEAN, Arcondicionado BOLEAN, Bateria BOLEAN, Painel BOLEAN);
+
+INSERT INTO  HARDWARE (Data, Hora, Desumidificador, Arcondicionado, Bateria, Painel) VALUES(14.10,15.00,'FALSE','FALSE','FALSE','FALSE');
+
+INSERT INTO HARDWARE(Data, Hora, Desumidificador, Arcondicionado , Bateria , Painel )
+VALUES(14.10,15.15,'FALSE','FALSE','FALSE','FALSE');
+
+INSERT INTO HARDWARE(Data, Hora, Desumidificador, Arcondicionado , Bateria , Painel ) 
+VALUES(14.10,15.30,'FALSE','TRUE','TRUE','TRUE');
+
+INSERT INTO HARDWARE(Data, Hora, Desumidificador, Arcondicionado , Bateria , Painel ) 
+VALUES(14.10,15.45,'FALSE','TRUE','TRUE','TRUE');
+
+INSERT INTO HARDWARE(Data, Hora, Desumidificador, Arcondicionado , Bateria , Painel ) 
+VALUES(14.10,16.00,'FALSE','TRUE','FALSE','TRUE');
+
+INSERT INTO HARDWARE(Data, Hora, Desumidificador, Arcondicionado , Bateria , Painel ) 
+VALUES(14.10,16.30,'FALSE','TRUE','FALSE','TRUE');
+
+INSERT INTO HARDWARE(Data, Hora, Desumidificador, Arcondicionado , Bateria , Painel ) 
+VALUES(14.10,16.45,'FALSE','TRUE','FALSE','TRUE');
+
+INSERT INTO HARDWARE(Data, Hora, Desumidificador, Arcondicionado , Bateria , Painel ) 
+VALUES(14.10,17.00,'FALSE','TRUE','FALSE','TRUE');
+
+INSERT INTO HARDWARE(Data, Hora, Desumidificador, Arcondicionado , Bateria , Painel ) 
+VALUES(14.10,17.30,'FALSE','TRUE','FALSE','TRUE');
+
+INSERT INTO HARDWARE(Data, Hora, Desumidificador, Arcondicionado , Bateria , Painel ) 
+VALUES(14.10,17.45,'FALSE','TRUE','FALSE','TRUE');
+
+INSERT INTO HARDWARE(Data, Hora, Desumidificador, Arcondicionado , Bateria , Painel ) 
+VALUES(14.10,18.00,'FALSE','TRUE','FALSE','TRUE');

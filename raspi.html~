@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Website by Orlando Vieira</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">SMIR</h1>
+      <h2 class="project-tagline">Servidor de Monitorização e Intervenção Remota</h2>
+      <a href="index.html" class="btn">SMIR PI</a>
+      <a href="hardware.php" class="btn">Hardware</a>
+      <a href="dados.php" class="btn">Dados</a>
+      <a href="graficos.php" class="btn">Gráficos</a></li>
+      <a href="contatos.php" class="btn">Contatos</a></li>
+  </section>
+    <section class="main-content">
+      <h3>
+<a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span class="octicon octicon-link"></span></a>Sobre o Raspberry Pi</h3>
+
+<p>O Raspberry Pi é um micro-PC de placa única com um enorme sucesso a nível mundial, com mais de 2 milhões de unidades vendidas. <br>A versão utilizada no projeto conta com um CPU quad-core ARM Cortex-A7 de 900MHz e 1GB de RAM o que faz com que seja capaz utilizar diferentes distribuições ARM GNU/Linux e até o novo sistema Microsoft Windows 10. <br></p>
+
+<h3>
+<a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span class="octicon octicon-link"></span></a>Motivação</h3>
+
+<p>Tendo disponiveis 40 pinos GPIO (General Purpose Input Output), é possivel, através dos barramentos existentes no Raspberry Pi (I²C, SPI e UART) criar um sistema é capaz de ler grandezas físicas, tais como temperatura, humidade, corrente e tensão elétrica (AC e DC), distância, caudal de fluido, radiação solar, entre outras, através de diversos sensores, digitais e/ou analógicos (necessita de um conversor A/D.</p>
+
+
+<img src="images/Raspberry-pi-800x450.png" alt="RPi2" style="float:left;width:370px;height:225px;right:4px;margin: 15px 10px 10px auto;">
+<h3>
+<a id="creating-pages-manually" class="anchor" href="#creating-pages-manually" aria-hidden="true"><span class="octicon octicon-link"></span></a>O projeto</h3>
+
+<p>Para ser possivel cumprir todas as funções, de forma simples e organizada, utiliza-se dois sistemas distintos, Cliente e Servidor.
+
+<br>O Cliente, controlado pelo RPI, é responsável por ler os sensores, armazenar os dados e envia-los por GSM para o Servidor, assim como tomar decisões de acordo com condições pré-definidas, através de atuadores (relés, motores, voz e envio de alertas).
+<br>O Servidor é responsável por receber os dados lidos pelo cliente, trata-los, analisá-los e de seguida mostrar-los ao utilizador através deste website (na página <a href="dados.php" class="class2">Dados</a> e <a href="graficos.php" class="class2">Gráficos</a>).</p>
+
+      
+    </section>
+</body>
+</html>

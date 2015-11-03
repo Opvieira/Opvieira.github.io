@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Website by Orlando Vieira</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">SMIR</h1>
+      <h2 class="project-tagline">Servidor de Monitorização e Intervenção Remota</h2>
+      <a href="index.php" class="btn">SMIR PI</a>
+      <a href="hardware.php" class="btn">Hardware</a>
+      <a href="dados.php" class="btn">Dados</a>
+      <a href="graficos.php" class="btn">Gráficos</a></li>
+      <a href="contatos.php" class="btn">Contatos</a></li>
+  </section>
+    <section class="main-content">
+
+<clock>
+<iframe src="http://free.timeanddate.com/clock/i4telzfn/n320/tlpt5/fn16/fs17/fcfff/tct/pct/tt0/tw0/tm1/ts1" frameborder="0" width="223" height="23" allowTransparency="true"></iframe>
+</clock>
+
+<body>
+<br><h2> Projecto</h2>
+SMIR: Servidor de Monitorização e Intervenção Remoto
+<br><h2>Aluno</h2>
+<p>Nome: Orlando Vieira
+<p>Número: 1101421
+<p>E-mail: 1101421@isep.ipp.pt
+
+<h2>Orientador</h2>
+<p>Nome: Armando Herculano
+<p>E-mail:ahlf@isep.ipp.pt
+</body>
+</html>
